@@ -1,0 +1,9 @@
+.desktop__main {
+
+}
+
+.desktop__taskbar {
+  background-color: #F2F2F295;
+  border-top: 1px solid #C0C0C0;
+  height: 3rem;
+}
