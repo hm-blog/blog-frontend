@@ -7,13 +7,13 @@
   
   
   .taskbar__weather {
-  
+    width: 5rem;
   }
   .taskbar__main {
     display: flex;
     gap: 1rem;
   }
   .taskbar__time {
-  
+    width: 5rem;
   }
 }

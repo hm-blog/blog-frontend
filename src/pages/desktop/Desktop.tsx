@@ -3,7 +3,7 @@ import Slot from '../../components/slot/Slot.tsx';
 import WindowLayout from '../../components/layouts/WindowLayout.tsx';
 import { Route, Routes } from 'react-router-dom';
 import Blog from '../Blog.tsx';
-import Taskbar from './Taskbar.tsx';
+import Taskbar from './taskbar/Taskbar.tsx';
 
 const Desktop = () => {
   return (
