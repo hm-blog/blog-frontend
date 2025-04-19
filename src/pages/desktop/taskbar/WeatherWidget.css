@@ -1,0 +1,26 @@
+.weather-widget {
+  display: flex;
+  user-select: none;
+  
+  .weather-widget__icon {
+    display: flex;
+    flex-direction: column;
+    
+    .weather-widget__sky-condition-icon,
+    .weather-widget__precipitation-icon {
+      -webkit-user-drag: none;
+      user-drag: none;
+      user-select: none;
+    }
+  }
+  .weather-widget__label {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    .weather-widget__temperature {
+    }
+    .weather-widget__description {
+      color: grey;
+    }
+  }
+}

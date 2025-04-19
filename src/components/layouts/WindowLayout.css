@@ -1,0 +1,14 @@
+.window-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .window-layout__header {
+  
+  }
+  .window-layout__default {
+    flex-grow: 1;
+  }
+  .window-layout__footer {
+  
+  }
+}
