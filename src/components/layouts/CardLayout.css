@@ -1,0 +1,32 @@
+.card-layout {
+  display: flex;
+  .card-layout__image,
+  .card-layout__content {
+    height: 12rem;
+  }
+  .card-layout__image {
+    width: 12rem;
+    background-color: #A94DC1;
+  }
+  .card-layout__content {
+    width: 16rem;
+  }
+  
+  &.image-top {
+    flex-direction: column;
+    /*height: 24rem;*/
+  }
+  &.image-bottom {
+    flex-direction: column-reverse;
+    /*height: 24rem;*/
+  }
+  &.image-left {
+    flex-direction: row;
+    /*width: 28rem;*/
+  }
+  &.image-right {
+    flex-direction: row-reverse;
+    /*width: 28rem;*/
+  }
+  
+}
