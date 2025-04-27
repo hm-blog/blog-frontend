@@ -4,6 +4,7 @@ import WindowLayout from '../../components/layouts/WindowLayout.tsx';
 import { Route, Routes } from 'react-router-dom';
 import Blog from '../Blog.tsx';
 import Taskbar from './taskbar/Taskbar.tsx';
+import HealthReport from '../health-report/HealthReport.tsx';
 
 const Desktop = () => {
   return (
@@ -13,6 +14,7 @@ const Desktop = () => {
           <div className="desktop__main">
             <Routes>
               <Route path="/blog" element={<Blog />}></Route>
+              <Route path="/health" element={<HealthReport />}></Route>
             </Routes>
           </div>
         </Slot>
