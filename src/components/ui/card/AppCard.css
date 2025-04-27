@@ -1,8 +1,32 @@
 .card-image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  img {
+    width: 90%;
+    height: auto;
+    border: black 1px solid;
+    margin-bottom: 1.4rem;
+  }
+  .card-image__date {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0.5rem 0 0;
+    right: 0;
+    color: rgba(237, 139, 68, 0.81);
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  justify-content: center;
+  align-items: center;
+  border: black 1px solid;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
 }
+
 .card-content {
   padding: 1rem;
   height: 100%;

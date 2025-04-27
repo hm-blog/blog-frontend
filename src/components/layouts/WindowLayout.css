@@ -7,6 +7,7 @@
   }
   .window-layout__default {
     flex-grow: 1;
+    overflow-y: auto;
   }
   .window-layout__footer {
   

@@ -8,12 +8,13 @@ import { SERVER_IMAGE_URL } from '../../../config';
 interface AppCardProps {
   imagePosition?: 'top' | 'bottom' | 'left' | 'right';
   imageUrl: string;
+  imageDate: string;
   title: string;
   body: string;
   postDate: Date;
 }
 
-const AppCard = ({ imagePosition, imageUrl, title, body, postDate }: AppCardProps) => {
+const AppCard = ({ imagePosition, imageUrl, imageDate, title, body, postDate }: AppCardProps) => {
   const [postDateTime, setPostDateTime] = useState<string>('');
 
   if (imagePosition === undefined) imagePosition = 'left';
@@ -27,7 +28,10 @@ const AppCard = ({ imagePosition, imageUrl, title, body, postDate }: AppCardProp
   return (
     <CardLayout imagePosition={imagePosition}>
       <Slot name="image">
-        <img className="card-image" src={imageFullPath} alt="이미지_01" />
+        <div className="card-image">
+          <img src={imageFullPath} alt="이미지_01" />
+          <p className="card-image__date">{imageDate}</p>
+        </div>
       </Slot>
       <Slot name="content">
         <div className="card-content">

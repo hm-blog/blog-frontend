@@ -1,15 +1,19 @@
 .card-layout {
   display: flex;
+  justify-content: center;
+  
   .card-layout__image,
   .card-layout__content {
-    height: 12rem;
+    height: 13.4rem;
   }
   .card-layout__image {
     width: 12rem;
-    background-color: #A94DC1;
+    min-width: 12rem;
   }
+  
   .card-layout__content {
     width: 16rem;
+    min-width: 16rem;
   }
   
   &.image-top {
